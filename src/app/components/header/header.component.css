@@ -1,0 +1,9 @@
+.container-header {
+  background-color: #fff;
+  padding-left: 1rem;
+}
+.search-header {
+  border: 1.5px solid;
+  border-radius: 30px;
+  padding: 0.5rem;
+}
