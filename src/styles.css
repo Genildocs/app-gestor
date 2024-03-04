@@ -3,8 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
   font-family: "Nunito", sans-serif;
+}
+
+body {
   min-height: 100vh;
   background-color: #f3f6f9;
 }

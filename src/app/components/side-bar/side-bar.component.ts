@@ -21,6 +21,10 @@ export class SideBarComponent implements OnInit {
         route: '/calendar',
       },
       {
+        name: 'Dividas',
+        route: '/dividas',
+      },
+      {
         name: 'Authentication',
         route: '/auth',
       },

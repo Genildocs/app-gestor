@@ -1,9 +1,15 @@
 .container-header {
   background-color: #fff;
-  padding-left: 1rem;
+  padding: 1rem 1rem;
 }
 .search-header {
   border: 1.5px solid;
   border-radius: 30px;
   padding: 0.5rem;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 100px 150px;
+  gap: 1rem;
 }

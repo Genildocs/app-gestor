@@ -1,0 +1,11 @@
+.card-receita {
+  max-width: 300px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-family: inherit;
+}
+
+.mat-card-subtitle {
+  color: blue;
+  font-size: 3rem;
+}
