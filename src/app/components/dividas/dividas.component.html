@@ -1,0 +1,65 @@
+<div>
+  <div class="title">
+    <h1 class="pl-5 pt-2 font-semibold">Home - Dividas</h1>
+  </div>
+  <div class="dividas-container">
+    <h2 class="pb-5 font-semibold text-2xl">Inserção de Dividas</h2>
+    <form class="dividas">
+      <div class="flex flex-wrap gap-5">
+        <div>
+          <label class="font-semibold text-lg" for="name">Nome </label>
+          <input
+            class="outline-none block"
+            type="text"
+            id="name"
+            placeholder="Nome"
+          />
+        </div>
+        <div>
+          <label class="font-semibold text-lg" for="value">Valor </label>
+          <input
+            class="outline-none block"
+            type="text"
+            id="value"
+            placeholder="R$"
+          />
+        </div>
+        <div>
+          <label class="font-semibold text-lg" for="data">Data </label>
+          <input
+            class="outline-none block"
+            type="date"
+            id="data"
+            placeholder="R$"
+          />
+        </div>
+        <button
+          class="btn mt-4 font-bold text-lg bg-blue-700 hover:bg-blue-400 pt-2 pb-2 pl-5 pr-5 rounded-md text-white"
+          type="submit"
+        >
+          Add
+        </button>
+      </div>
+    </form>
+    <div class="table-dividas mt-8">
+      <table class="w-full">
+        <thead class="bg-slate-300">
+          <tr class="flex p-2 gap-5">
+            <th class="text-lg" *ngFor="let table of tables">
+              {{ table }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="flex p-2 gap-5" *ngFor="let table of tablesData">
+            <td>{{ table.id }}</td>
+            <td>{{ table.name }}</td>
+            <td>{{ table.valor }}</td>
+            <td>{{ table.data }}</td>
+            <td>{{ table.acoes }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

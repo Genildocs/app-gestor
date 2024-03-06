@@ -17,12 +17,12 @@ export class SideBarComponent implements OnInit {
         route: '/dashboard',
       },
       {
-        name: 'Calendar',
-        route: '/calendar',
-      },
-      {
         name: 'Dividas',
         route: '/dividas',
+      },
+      {
+        name: 'Calendar',
+        route: '/calendar',
       },
       {
         name: 'Authentication',

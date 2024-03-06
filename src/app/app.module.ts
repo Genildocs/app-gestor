@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
+import { DividasComponent } from './components/dividas/dividas.component';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,7 @@ import { MatCardModule } from '@angular/material/card';
     DashboardComponent,
     CalendarComponent,
     HeaderComponent,
+    DividasComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatMenuModule,
     MatCardModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

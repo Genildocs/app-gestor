@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { AuthComponent } from './pages/auth/auth.component';
+import { DividasComponent } from './components/dividas/dividas.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,11 @@ const routes: Routes = [
         path: 'calendar',
         title: 'Home - calendar',
         component: CalendarComponent,
+      },
+      {
+        path: 'dividas',
+        title: 'Home - dividas',
+        component: DividasComponent,
       },
     ],
   },

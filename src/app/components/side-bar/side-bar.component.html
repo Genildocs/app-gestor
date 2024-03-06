@@ -7,7 +7,7 @@
     <div class="border"></div>
     <div class="links pl-5 pt-5">
       <ul>
-        <li class="mb-3" *ngFor="let link of links">
+        <li class="mb-3 link" *ngFor="let link of links">
           <a class="font-bold" [routerLink]="link.route">{{ link.name }}</a>
         </li>
       </ul>
