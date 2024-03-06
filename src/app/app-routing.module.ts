@@ -5,6 +5,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { DividasComponent } from './components/dividas/dividas.component';
+import { ReceitasComponent } from './components/receitas/receitas.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,11 @@ const routes: Routes = [
         path: 'dividas',
         title: 'Home - dividas',
         component: DividasComponent,
+      },
+      {
+        path: 'receitas',
+        title: 'Home - receitas',
+        component: ReceitasComponent,
       },
     ],
   },

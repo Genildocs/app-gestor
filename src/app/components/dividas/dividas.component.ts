@@ -23,8 +23,35 @@ export class DividasComponent implements OnInit {
       data: '25/05/2022',
       acoes: 'Deletar',
     },
+    {
+      id: '3',
+      name: 'Internet',
+      valor: 'R$ 79.90',
+      data: '25/05/2022',
+      acoes: 'Deletar',
+    },
   ];
   constructor() {}
 
   ngOnInit(): void {}
+
+  addDividas(event: Event) {
+    event.preventDefault();
+    this.tablesData.push({
+      id: '4',
+      name: 'Remedios',
+      valor: 'R$ 250',
+      data: '30/05/2022',
+      acoes: 'Deletar',
+    });
+    this.totalValor();
+  }
+
+  totalValor() {
+    let total = 0;
+    this.tablesData.forEach((data) => {
+      total += parseFloat(data.valor.replace('R$ ', ''));
+    });
+    return console.log(total);
+  }
 }

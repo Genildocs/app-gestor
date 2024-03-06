@@ -17,6 +17,10 @@ export class SideBarComponent implements OnInit {
         route: '/dashboard',
       },
       {
+        name: 'Receitas',
+        route: '/receitas',
+      },
+      {
         name: 'Dividas',
         route: '/dividas',
       },

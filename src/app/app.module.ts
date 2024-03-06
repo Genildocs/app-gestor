@@ -15,6 +15,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { DividasComponent } from './components/dividas/dividas.component';
 import { MatTableModule } from '@angular/material/table';
+import { ReceitasComponent } from './components/receitas/receitas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { MatTableModule } from '@angular/material/table';
     CalendarComponent,
     HeaderComponent,
     DividasComponent,
+    ReceitasComponent,
   ],
   imports: [
     BrowserModule,
