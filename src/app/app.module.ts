@@ -16,6 +16,7 @@ import { MatCardModule } from '@angular/material/card';
 import { DividasComponent } from './components/dividas/dividas.component';
 import { MatTableModule } from '@angular/material/table';
 import { ReceitasComponent } from './components/receitas/receitas.component';
+import { IconsModule } from './icons/icons/icons.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { ReceitasComponent } from './components/receitas/receitas.component';
     MatMenuModule,
     MatCardModule,
     MatTableModule,
+    IconsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
