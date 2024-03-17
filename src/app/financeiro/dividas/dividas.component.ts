@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Tables } from 'src/app/interfaces';
+import { Tables } from 'src/app/interfaces/interfaces';
 @Component({
   selector: 'app-dividas',
   templateUrl: './dividas.component.html',
@@ -33,7 +33,9 @@ export class DividasComponent implements OnInit {
   ];
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.totalValor();
+  }
 
   addDividas(event: Event) {
     event.preventDefault();
@@ -47,11 +49,11 @@ export class DividasComponent implements OnInit {
     this.totalValor();
   }
 
-  totalValor() {
+  totalValor(): number {
     let total = 0;
     this.tablesData.forEach((data) => {
       total += parseFloat(data.valor.replace('R$ ', ''));
     });
-    return console.log(total);
+    return total;
   }
 }

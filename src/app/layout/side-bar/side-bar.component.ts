@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Links } from 'src/app/interfaces';
+import { Links } from 'src/app/interfaces/interfaces';
 @Component({
   selector: 'app-side-bar',
   templateUrl: './side-bar.component.html',

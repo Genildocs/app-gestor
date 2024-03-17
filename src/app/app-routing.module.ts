@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
+import { DividasComponent } from './financeiro/dividas/dividas.component';
+import { ReceitasComponent } from './financeiro/receitas/receitas.component';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { AuthComponent } from './pages/auth/auth.component';
-import { DividasComponent } from './components/dividas/dividas.component';
-import { ReceitasComponent } from './components/receitas/receitas.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
